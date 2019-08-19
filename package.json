@@ -1,0 +1,37 @@
+{
+  "name": "md-slides",
+  "version": "1.0.0",
+  "description": "Medical quiz slides",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/patarapolw/md-slides.git"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --open",
+    "build": "webpack --mode=production",
+    "deploy": "npm run build && gh-pages -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Pacharapol Withayasakpunt",
+    "email": "patarapolw@gmail.com",
+    "url": "https://polvcode.dev"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.0.4",
+    "css-loader": "^3.2.0",
+    "dree": "^2.1.10",
+    "gh-pages": "^2.1.1",
+    "style-loader": "^1.0.0",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0"
+  },
+  "dependencies": {
+    "dree-browser": "^0.1.3"
+  }
+}
