@@ -1,5 +1,6 @@
 Array.from(document.getElementsByTagName("img")).forEach((n) => {
-  if (n.src.startsWith("@")) {
-    n.src = "https://patarapolw.github.io/md-slides/" + n.src.substr(1);
+  const i = n.src.indexOf("@");
+  if (i !== -1) {
+    n.src = "https://patarapolw.github.io/md-slides/" + n.src.substr(i + 1);
   }
 });
